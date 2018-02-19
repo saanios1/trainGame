@@ -43,19 +43,27 @@
 
 	</head>
 	<body>
-
-		<canvas id="canvas" class="canvas" width="400" height="400"> 
+        <div style="position:absolute; top:75px; left:75px; z-index:3">
+		<canvas id="canvas" class="canvas" width="400" height="400" position> 
 			Your browser does not support HTML5 &lt;canvas&gt;.
 
 		</canvas>
-
+    </div>
 			<section>
+                <div style="position:absolute; top:15px; left:75px; z-index:3">
+                <p> How many boxes can you collect? <br>You can change the speed of your train, but you only have five lives.</p>
+                <!--
+                <div style="position:absolute; top:20px; left:75px; z-index:3">
 			<button id="speedup" type="button">SpeedUp</button>
-			<button id="speeddown" type="button">SpeedDown</button>
-			
+			<button id="speeddown" type="button">SpeedDown</button> -->
+                    
+                    <p> You can change the speed with keys "-" and "+".</p>
+			</div>
 			</section>
-
+<!--
 		<footer class="footer  pad">
+            <div style="position:absolute; top:500px; left:75px; z-index:">
 				<p class="light small"><i class="fa fa-copyright"></i> Copyright 2016 by <span class="vcard"> <span class="fn">Salla-Mari Saanio</span>, <span class="org">Aalto-yliopisto</span></span></p>
-		</footer>
+            </div>
+		</footer> -->
 	</body>
