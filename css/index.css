@@ -1,0 +1,187 @@
+* {
+	font-family:'Play';
+	margin: 1%;
+	box-sizing: border-box;	
+	text-align: center;
+}
+#canvas {
+	background-image:url("../assets/uusbg.jpg");
+	
+}
+
+h2 {
+	color:#0B2161;
+}
+
+.header-image {
+	margin: 25px;
+	width: 100%;
+	top: 0;
+	left: 0;
+	right: 0;
+	max-width: 3000px;	
+}
+
+
+body {
+	font-size:25px;
+	color: black;
+ 	background-color: white; 
+}
+#mittari {
+ vertical-align: right;
+}
+.pad {
+		padding: 20px;
+	}
+
+.nav-main {
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	padding: 0 50px;
+	background: white;
+	height: auto;
+	z-index: 10;
+	box-shadow: 0 2px 5px black;
+}
+
+.nav-list {
+	margin: 0;
+	padding: 0;
+	text-align: center;
+}
+
+.nav-item {
+	position: relative;
+	list-style: none;
+	display: inline-block;
+	padding: 0 20px;
+	line-height: 40px;
+	border-bottom: 2px solid transparent;
+	cursor: pointer;
+	height: 40px;
+	transition: all 0.2s ease;
+}
+.nav-title {
+	text-decoration: none;
+	font-size: 24px;
+	color: #0B2161;
+}
+.nav-item:hover {
+	border-color: #0044cc;
+}
+
+/* Styles for the details drop-down menu */
+.nav-title:focus {
+	outline: none;
+	box-shadow: none;
+}
+
+.drop-down-container summary::-webkit-details-marker {
+  display: none
+}
+
+.drop-down-container summary:after {
+  content: "\f0c9";
+  padding-left: 5px;
+}
+
+.drop-down-container[open] summary:after {
+	content: "\f00d";
+}
+
+.drop-down {
+	position: absolute;
+	top: 100%;
+	left: 0;
+	right: 0;
+	padding: 0;
+	width: 100%;
+	height: auto;
+	z-index: 5;
+	border: 2px solid #0B2161;
+	border-right: none;
+	border-left: none;
+}
+
+.drop-down-item {
+	font-size:18px;
+	background: white;
+	list-style: none;
+}
+
+.drop-down-item a {
+	color: #0B2161;
+	display: block;
+	padding: 5px;
+	text-decoration: none;
+	transition: all 0.2s ease;
+}
+
+.drop-down-item a:hover {
+	color: black;
+}
+.header-title {
+	color:rgb(250, 230, 170);
+	 text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+	font-size:46px;
+	}
+
+#what {
+	color:rgb(250, 230, 170);
+}
+
+@media screen and (max-width: 800px) {
+	.nav-title{
+		font-size:18px;
+	}	
+	.nav-item{
+		line-height:30px; 
+	}
+	.body{
+		font-size:20px;
+	}
+	.header-title{
+		font-size:38px;
+	}
+}
+
+@media screen and (max-width: 600px) {
+		
+	.body {
+		font-size:16px;
+	}
+	.header-title{
+		font-size:25px;
+	}
+	.drop-down-item {
+		font-size:13px;
+	}
+	.nav-item  {
+		margin: 0px 0px;
+		max-width: 30%;
+	}
+}
+
+@media screen and (max-width: 400px) {
+		
+	.body {
+		font-size:16px;
+	}
+	.header-title{
+		font-size:25px;
+	}
+	.drop-down-item {
+		font-size:13px;
+	}
+	.nav-item  {
+		margin: 0px 0px;
+		max-width: 30%;
+	}
+	.nav-main {
+		padding: 1px;
+	}
+}
+
